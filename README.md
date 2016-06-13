@@ -1,9 +1,9 @@
   Simple layout page application
 
 a. You can run project by :
+  
+    https://romangrb.github.io/simple-layout-page
 
-  https://romangrb.github.io/simple-layout-page
-    
 
 b. Clone and quick bind
 

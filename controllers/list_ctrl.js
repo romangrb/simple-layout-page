@@ -3,7 +3,7 @@
   'use strict';
   
   angular
-      .module('structureMng')
+      .module('simpleLayoutPage')
       .controller('ListCtrl', ['$window', 'constant',
           
   function($window, c) {
@@ -12,18 +12,12 @@
     
     this.tittle = c.H_LIST;
 
-    this.save = function(coll){
-      
-      var status = {
-        type:0, 
-        obj:{
-          
+    //Slider with selection bar
+    this.slider_visible_bar = {
+        value: 10,
+        options: {
+            showSelectionBar: true
         }
-      },
-        callback = function (status){ 
-          $window.location.href= "#/";    
-      };
-            
     };
   
   }]);

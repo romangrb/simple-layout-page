@@ -3,7 +3,7 @@
   'use strict';
     
   angular
-      .module('structureMng', ['ngRoute'])
+      .module('simpleLayoutPage', ['ngRoute', 'rzModule'])
       .config(
   
   function($routeProvider) {
