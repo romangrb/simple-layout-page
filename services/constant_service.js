@@ -6,7 +6,7 @@
       .module('simpleLayoutPage')
       .constant('constant', {
      
-    H_LIST : 'Welche <b> Flache </b> hat das Grundstuck des Hauses?'
+    H_LIST : "Welche Flache hat das Grundstuck des Hauses?"
      
     });
    
