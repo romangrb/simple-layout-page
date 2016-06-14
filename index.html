@@ -28,7 +28,6 @@
           <div class="navbar-header">
             <img src="../Icons/logo.png"></img><a href="#">Meine-website.de</a>
           </div>
-          
           <ul class="nav navbar-nav">
             <li><a href="#"><img src="../Icons/ok_icon_menu.png"></img>bester Verkaufserlös durch Vergleich</a></li>
             <li><a href="#"><img src="../Icons/ok_icon_menu.png"></img>kostenlos & unverbindlich</a></li>
@@ -38,17 +37,18 @@
       </nav>
     </header>
     
-    <main>
+    <main ng-controller="PageCtrl as pageVm">
       <div class="container-fluid steps">
         <div class="container">
           <ul class="steps_nav">
-            <li class="active"><a href="#/list"><span class="number">1</span>Sie beschreiben <br /> Ihre Immobilie</a></li>
+            <li ng-click="pageVm.activeTittle(1)" ng-class="{'active': pageVm.pages[1]}"><a href="#/list"><span class="number">1</span>Sie beschreiben <br /> Ihre Immobilie</a></li>
             <div class="sqare"></div>
             <div class="triangle"></div>
             <img src="../Icons/arrow.png"></img>
-            <li><a href="#/second"><span class="number">2</span> Wir finden passende <br /> Makler für Sie</a></li>
+            <li ng-click="pageVm.activeTittle(2)" ng-class="{'active': pageVm.pages[2]}">
+              <a href="#/second"><span class="number">2</span> Wir finden passende <br/> Makler für Sie</a></li>
             <img src="../Icons/arrow.png"></img>
-            <li><a href="#/third"><span class="number">3</span> Sie vergleichen kostenlos <br /> Verkaufsangebote der Makler</a></li>
+            <li ng-click="pageVm.activeTittle(3)" ng-class="{'active': pageVm.pages[3]}"><a href="#/third"><span class="number">3</span> Sie vergleichen kostenlos <br /> Verkaufsangebote der Makler</a></li>
           </ul>
         </div>
       </div>
@@ -117,6 +117,7 @@
 		<script src="services/constant_service.js"></script>
 		 <!--init directive -->
 		 <!--init controllers -->
+		<script src="controllers/page_ctrl.js"></script>
 		<script src="controllers/list_ctrl.js"></script>
 		<script src="controllers/sec_ctrl.js"></script>
 		<script src="controllers/third_ctrl.js"></script>

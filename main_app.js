@@ -10,7 +10,7 @@
     
     $routeProvider
         .when('/', {
-            templateUrl: 'views/list.html',
+            templateUrl: 'views/first_page.html',
             controlleAs: 'listVm'
         })
         .when('/second', {
