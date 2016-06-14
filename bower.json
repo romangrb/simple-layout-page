@@ -12,6 +12,8 @@
     "angular-route": "^1.5.5",
     "angular-resource": "^1.5.5",
     "bootstrap": "^3.3.6",
-    "jquery": "^2.2.4"
+    "jquery": "^2.2.4",
+    "seiyria-bootstrap-slider": "^7.1.1",
+    "angular-bootstrap-slider": "^0.1.28"
   }
 }

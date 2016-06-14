@@ -4,28 +4,14 @@
   
   angular
       .module('structureMng')
-      .controller('ListCtrl', ['$window', 'constant',
+      .controller('ListCtrl', ['$scope', 'constant',
           
-  function($window, c) {
+  function($scope, c) {
     
     var self = this;
     
     this.tittle = c.H_LIST;
-
-    this.save = function(coll){
-      
-      var status = {
-        type:0, 
-        obj:{
-          
-        }
-      },
-        callback = function (status){ 
-          $window.location.href= "#/";    
-      };
-            
-    };
-  
+    
   }]);
           
 })();
