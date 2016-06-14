@@ -121,7 +121,7 @@ angular.module('ui.bootstrap-slider', [])
 
                     if (attrs.formatter) {
                         options.formatter = function(value) {
-                            return $scope.formatter({value: value});
+                            return $scope.formatter({value:value});
                         }
                     }
 

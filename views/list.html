@@ -2,4 +2,37 @@
   
   <h4 class="text-center">{{listVm.tittle}}</h4>
   
+  <slider id='squere_sl'
+        ng-model="listVm.sliderSq.options.squereLine"
+        value="listVm.sliderSq.options.value"
+        min="listVm.sliderSq.options.min"
+        max="listVm.sliderSq.options.max"
+        step="listVm.sliderSq.options.step"
+        orientation="{{ listVm.sliderSq.options.orientation }}"
+        handle="{{ listVm.sliderSq.options.handle }}"
+        enabled="{{ listVm.sliderSq.options.enabled }}"
+        ng-disabled="listVm.sliderSq.options.ngDisabled"
+        naturalarrowkeys="{{ listVm.sliderSq.options.naturalarrowkeys }}"
+        precision="{{ listVm.sliderSq.options.precision }}"
+        formatter="listVm.sliderSq.methods.toSquere(value)"
+        on-stop-slide="listVm.sliderSq.methods.slide(value)"
+        >
+      If you can see this then slider did not get compiled by Angular.
+      Check that all necessary files are included, did you run "bower install"?
+  </slider>
+  <span class='label-begin'>{{listVm.sliderSq.methods.getLabelBegin()}}</span>
+  <span class='label-end'>{{listVm.sliderSq.methods.getLabelEnd()}}</span>
+  
+  <div class="form-group">
+    <label for="square">Alternative angle</label>
+    <input type="number" 
+       class="form-control"
+       id="square"
+       ng-model="listVm.sliderSq.options.value"
+       value="{{listVm.sliderSq.options.value}}"
+       min="listVm.sliderSq.options.min" 
+       max="listVm.sliderSq.options.max"
+    >
+  </div>
+
 </section>

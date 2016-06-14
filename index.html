@@ -1,26 +1,68 @@
 <!DOCTYPE html>
 
-<html ng-app="structureMng">
+<html ng-app="layoutPage">
 
   <head>
     
     <meta charset="UTF-8">
     
     <script src="app_libs/bower_components/angular/angular.min.js"></script>
-    <script src="app_libs/bower_components/angular-resource/angular-resource.min.js"></script>
     <script src="app_libs/bower_components/angular-route/angular-route.min.js"></script>
+    
     <link href="app_libs/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="app_libs/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="app_libs/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    
     <link href="app_libs/bower_components/seiyria-bootstrap-slider/dist/css/bootstrap-slider.css" rel="stylesheet">
-    <script src="app_libs/bower_components/seiyria-bootstrap-slider/dist/bootstrap-slider.min.js"></script>
-
+    <!--<script src="app_libs/bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>-->
+    <script src="app_libs/bower_components/seiyria-bootstrap-slider/dist/bootstrap-slider.js"></script>
+    
+    <script src="app_libs/bower_components/angular-bootstrap-slider/slider.js"></script>
     <link href="stylesheet/style.css" rel="stylesheet">
   </head>
   
   <body>
-    <h5 class="col-xs-12 text-center">  </h5>
-     <!--content -->
-    <div ng-view></div>
+    <header>
+      <nav class="navbar">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <img src="../Icons/logo.png"></img><a href="#">Meine-website.de</a>
+          </div>
+          
+          <ul class="nav navbar-nav">
+            <li><a href="#"><img src="../Icons/ok_icon_menu.png"></img>bester Verkaufserlös durch Vergleich</a></li>
+            <li><a href="#"><img src="../Icons/ok_icon_menu.png"></img>kostenlos & unverbindlich</a></li>
+            <li><a href="#"><img src="../Icons/ok_icon_menu.png"></img>100% Geprüfte Makler</a></li> 
+          </ul>
+        </div>
+      </nav>
+    </header>
+    
+    <main>
+      <div class="container-fluid steps">
+        <div class="container">
+          <ul class="steps_nav">
+            <li><a href="#" class="active"><span class="number">1</span>Sie beschreiben <br /> Ihre Immobilie</a></li>
+            <div class="sqare"></div>
+            <div class="triangle"></div>
+            <img src="../Icons/arrow.png"></img>
+            <li><a href="#"><span class="number">2</span> Wir finden passende <br /> Makler für Sie</a></li>
+            <img src="../Icons/arrow.png"></img>
+            <li><a href="#"><span class="number">3</span> Sie vergleichen kostenlos <br /> Verkaufsangebote der Makler</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      
+      
+      <h5 class="col-xs-12 text-center">  </h5>
+       <!--content -->
+      <div ng-view></div>
+    </main>
+    
+    <footer>
+      
+    </footer>
     
     <script src="main_app.js"></script> 
 		 <!--init services -->

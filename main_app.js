@@ -3,7 +3,7 @@
   'use strict';
     
   angular
-      .module('structureMng', ['ngRoute'])
+      .module('layoutPage', ['ngRoute', 'ui.bootstrap-slider'])
       .config(
   
   function($routeProvider) {
