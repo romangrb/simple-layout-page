@@ -1,9 +1,9 @@
 <section ng-controller="ListCtrl as listVm">
   
-  <h4 class="text-center">{{listVm.tittle}}</h4>
+  'Welche Fläche hat das Grundstück des Hauses?'
   
-  <slider id='squere_sl'
-        ng-model="listVm.sliderSq.options.squereLine"
+  <slider id='squere_sl' 
+        ng-model="listVm.sliderSq.options.sliderValue"
         value="listVm.sliderSq.options.value"
         min="listVm.sliderSq.options.min"
         max="listVm.sliderSq.options.max"
@@ -15,7 +15,7 @@
         naturalarrowkeys="{{ listVm.sliderSq.options.naturalarrowkeys }}"
         precision="{{ listVm.sliderSq.options.precision }}"
         formatter="listVm.sliderSq.methods.toSquere(value)"
-        on-stop-slide="listVm.sliderSq.methods.slide(value)"
+        on-stop-slide="listVm.sliderSq.methods.slide(value)"                  
         >
       If you can see this then slider did not get compiled by Angular.
       Check that all necessary files are included, did you run "bower install"?
@@ -29,9 +29,10 @@
        class="form-control"
        id="square"
        ng-model="listVm.sliderSq.options.value"
-       value="{{listVm.sliderSq.options.value}}"
-       min="listVm.sliderSq.options.min" 
-       max="listVm.sliderSq.options.max"
+       value="listVm.sliderSq.options.value"
+       ng-change="listVm.sliderSq.methods.setValue(this.listVm.sliderSq.options.value)"
+       min="{{listVm.sliderSq.options.min}}" 
+       max="{{listVm.sliderSq.options.max}}"
     >
   </div>
 

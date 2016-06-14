@@ -42,35 +42,84 @@
       <div class="container-fluid steps">
         <div class="container">
           <ul class="steps_nav">
-            <li><a href="#" class="active"><span class="number">1</span>Sie beschreiben <br /> Ihre Immobilie</a></li>
+            <li class="active"><a href="#/list"><span class="number">1</span>Sie beschreiben <br /> Ihre Immobilie</a></li>
             <div class="sqare"></div>
             <div class="triangle"></div>
             <img src="../Icons/arrow.png"></img>
-            <li><a href="#"><span class="number">2</span> Wir finden passende <br /> Makler für Sie</a></li>
+            <li><a href="#/second"><span class="number">2</span> Wir finden passende <br /> Makler für Sie</a></li>
             <img src="../Icons/arrow.png"></img>
-            <li><a href="#"><span class="number">3</span> Sie vergleichen kostenlos <br /> Verkaufsangebote der Makler</a></li>
+            <li><a href="#/third"><span class="number">3</span> Sie vergleichen kostenlos <br /> Verkaufsangebote der Makler</a></li>
           </ul>
         </div>
       </div>
       
       
+      <div class="container-fluid tool">
+        <div class="container tool_content">
+          
+          <h3> Hello </h3>
+          
+          <h5 class="col-xs-12 text-center">  </h5>
+           <!--content -->
+          <div ng-view></div>
+          
+        </div>
+          
+      </div>
       
-      <h5 class="col-xs-12 text-center">  </h5>
-       <!--content -->
-      <div ng-view></div>
+      <div class="container-fluid content_block">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="content">
+              <p>Bekannt aus den Medien</p>
+              <div class="content_bott">
+                 <img src="../Icons/bottom_icon2.png" title="Brands"></img>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="content">
+              <ul class="row">
+                <li>Kundenbewertung</li>
+                <li>&#8709 „Sehr Gut“ 4.6/5.0 </li>
+                <li></li>
+              </ul>
+              <div class="content_bott">
+                 <img src="../Icons/bottom_icon2.png" title="Brands"></img>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="content">
+              <p>Tagesstatistik</p>
+              <div class="content_bott">
+                 <img src="../Icons/bottom_icon2.png" title="Brands"></img>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
     </main>
     
     <footer>
-      
+      <div class="foot">
+        <ul>
+          <li>Impressum</li>
+          <li>AGB</li>
+          <li>&copy 2014 <a href="#" title="Meine-website.de">meine-website.de</a></li>
+        </ul>
+      </div>
     </footer>
     
     <script src="main_app.js"></script> 
 		 <!--init services -->
 		<script src="services/constant_service.js"></script>
 		 <!--init directive -->
-		
 		 <!--init controllers -->
 		<script src="controllers/list_ctrl.js"></script>
+		<script src="controllers/sec_ctrl.js"></script>
+		<script src="controllers/third_ctrl.js"></script>
 		
   </body>
   
