@@ -40,14 +40,29 @@
       <div class="container-fluid steps">
         <div class="container">
           <ul class="steps_nav">
-            <li ng-click="pageVm.activeTittle(1)" ng-class="{'active': pageVm.pages[1]}"><a href="#/list"><span class="number">1</span>Sie beschreiben <br /> Ihre Immobilie</a></li>
-            <div class="sqare"></div>
-            <div class="triangle"></div>
+            <li ng-click="pageVm.activeTittle(1)" ng-class="{'active': pageVm.pages[1]}">
+                <a href="#/list">
+                  <span class="number">1</span>Sie beschreiben <br /> Ihre Immobilie</a>
+            </li>
+            <div ng-class="pageVm.pages[1] ? ['triangle', 'sqare', 'arrow-pos1'] : 'arrow-hide'"></div>
+            <div ng-class="pageVm.pages[1] ? ['triangle', 'sqare', 'arrow-pos1'] : 'arrow-hide'"></div>
             <img src="../Icons/arrow.png"></img>
+            
             <li ng-click="pageVm.activeTittle(2)" ng-class="{'active': pageVm.pages[2]}">
-              <a href="#/second"><span class="number">2</span> Wir finden passende <br/> Makler für Sie</a></li>
-            <img src="../Icons/arrow.png"></img>
-            <li ng-click="pageVm.activeTittle(3)" ng-class="{'active': pageVm.pages[3]}"><a href="#/third"><span class="number">3</span> Sie vergleichen kostenlos <br /> Verkaufsangebote der Makler</a></li>
+              <a href="#/second">
+                <span class="number">2</span> Wir finden passende <br/> Makler für Sie</a>
+            </li>
+            <div ng-class="pageVm.pages[2] ? ['triangle', 'sqare', 'arrow-pos2'] : 'arrow-hide'"></div>
+            <div ng-class="pageVm.pages[2] ? ['triangle', 'sqare', 'arrow-pos2'] : 'arrow-hide'"></div>
+            
+            <img  src="../Icons/arrow.png"></img>
+            
+            <li ng-click="pageVm.activeTittle(3)" ng-class="{'active': pageVm.pages[3]}">
+              <a href="#/third"><span class="number">3</span> Sie vergleichen kostenlos <br /> Verkaufsangebote der Makler</a>
+            </li>
+            <div ng-class="pageVm.pages[2] ? ['triangle', 'sqare', 'arrow-pos2'] : 'arrow-hide'"></div>
+            <div ng-class="pageVm.pages[2] ? ['triangle', 'sqare', 'arrow-pos2'] : 'arrow-hide'"></div>
+            
           </ul>
         </div>
       </div>
@@ -55,9 +70,6 @@
       
       <div class="container-fluid tool">
         <div class="container tool_content">
-          
-          <h3> Hello </h3>
-          
           <h5 class="col-xs-12 text-center">  </h5>
            <!--content -->
           <div ng-view></div>

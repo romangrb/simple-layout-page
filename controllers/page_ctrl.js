@@ -11,9 +11,13 @@
     var self = this;
     
     this.pages = {
-      1 : false,
+      1 : true,
       2 : false,
       3 : false
+    },
+    
+    this.arrowPosition = {
+      
     },
     
     this.activeTittle = function(name){

@@ -146,25 +146,40 @@ li .active, .active span, .active a {
   padding: 12px 10px;
 }
 
+
 .sqare {
   position: absolute;
   width: 200px;
   height: 10px;
   bottom: 0;
-  left: 500px;
   background-color: #929f00;
+  z-index: 999;
 }
 
 .triangle {
   position: absolute;
   bottom: -30px;
-  left: 500px;
   width: 0;
   height: 0;
   border-style: solid;
   border-width: 30px 100px 0 100px;
   border-color: #929f00 transparent transparent transparent;
   z-index: 999;
+}
+.arrow-hide {
+  display:none;
+}
+
+.arrow-pos1 {
+  left: 0px;
+}
+
+.arrow-pos2 {
+  left: 500px;
+}
+
+.arrow-pos3 {
+  left: 750px;
 }
 
 /*Tool*/
@@ -183,6 +198,13 @@ li .active, .active span, .active a {
 
 
 .tool_content {
+  position: relative;
+  top: 100px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 5px solid lightgrey;
+  width: 50%;
+  height: 400px;
 }
 
 /* SQUERE SLIDER STYLE */
